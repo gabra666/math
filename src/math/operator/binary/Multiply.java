@@ -1,7 +1,7 @@
 package math.operator.binary;
 
-import math.operator.BinaryOperator;
 import math.Node;
+import math.operator.BinaryOperator;
 
 public class Multiply extends BinaryOperator {
 
