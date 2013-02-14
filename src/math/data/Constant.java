@@ -1,18 +1,19 @@
 package math.data;
 
 import math.Node;
+import math.Value;
 
 public class Constant extends Node{
 
-    private int value;
+    private Value value;
 
-    public Constant(int value) {
+    public Constant(Value value) {
         this.value = value;
     }
 
     
     @Override
-    public float evaluate(){
-     return value;   
+    public Value evaluate(){
+      return value;   
     }
 }

@@ -1,9 +1,16 @@
 package math.operator;
 
+import math.Node;
+
 public abstract class UnaryOperator extends Operator {
 
-    public UnaryOperator() {
+    private final Node child;
+
+    public UnaryOperator(Node child) {
+        this.child = child;
     }
 
-    
+    public Node getChild() {
+        return child;
+    }
 }

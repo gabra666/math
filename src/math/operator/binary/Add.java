@@ -1,6 +1,8 @@
 package math.operator.binary;
 
 import math.Node;
+import math.Value;
+import math.data.MathDouble;
 import math.operator.BinaryOperator;
 
 public class Add extends BinaryOperator {
@@ -10,7 +12,9 @@ public class Add extends BinaryOperator {
     }
 
     @Override
-    public float evaluate() {
-        return getLeftChild().evaluate() + getRigthChild().evaluate();
+    public Value evaluate() {
+        return new MathDouble(getLeftChild().evaluate() +
+                getRigthChild().evaluate();
+       
     }
 }

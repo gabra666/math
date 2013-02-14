@@ -9,5 +9,5 @@ package math;
  * @author usuario
  */
 public abstract class Node {
-    public abstract float evaluate();
+    public abstract Value evaluate();
 }
