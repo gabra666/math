@@ -15,15 +15,15 @@ public class DivTest {
     }
 
     @Test
-    public void addThreeConstant() {
+    public void divThreeConstant() {
         Node add = new Divide(new Constant(10), new Divide(new Constant(5), new Constant(2)));
-        Assert.assertEquals(17, add.evaluate(), 0);
+        Assert.assertEquals(4, add.evaluate(), 0);
     }
 
     @Test
-    public void addFourConstant() {
+    public void divFourConstant() {
         Node add = new Divide(new Divide(new Constant(10), new Constant(2)),
                 new Divide(new Constant(10), new Constant(2)));
-        Assert.assertEquals(24, add.evaluate(), 0);
+        Assert.assertEquals(1, add.evaluate(), 0);
     }
 }

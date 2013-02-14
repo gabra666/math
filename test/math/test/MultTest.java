@@ -15,15 +15,15 @@ public class MultTest {
     }
 
     @Test
-    public void addThreeConstant() {
+    public void multThreeConstant() {
         Node add = new Multiply(new Constant(10), new Multiply(new Constant(5), new Constant(2)));
-        Assert.assertEquals(17, add.evaluate(), 0);
+        Assert.assertEquals(100, add.evaluate(), 0);
     }
 
     @Test
-    public void addFourConstant() {
+    public void multFourConstant() {
         Node add = new Multiply(new Multiply(new Constant(10), new Constant(2)),
                 new Multiply(new Constant(10), new Constant(2)));
-        Assert.assertEquals(24, add.evaluate(), 0);
+        Assert.assertEquals(400, add.evaluate(), 0);
     }
 }

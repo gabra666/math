@@ -15,15 +15,15 @@ public class SubTest {
     }
 
     @Test
-    public void addThreeConstant() {
+    public void subThreeConstant() {
         Node add = new Substract(new Constant(10), new Substract(new Constant(5), new Constant(2)));
-        Assert.assertEquals(17, add.evaluate(), 0);
+        Assert.assertEquals(7, add.evaluate(), 0);
     }
 
     @Test
-    public void addFourConstant() {
+    public void subFourConstant() {
         Node add = new Substract(new Substract(new Constant(10), new Constant(2)),
                 new Substract(new Constant(10), new Constant(2)));
-        Assert.assertEquals(24, add.evaluate(), 0);
+        Assert.assertEquals(0, add.evaluate(), 0);
     }
 }
