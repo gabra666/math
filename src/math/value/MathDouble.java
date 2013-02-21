@@ -1,8 +1,8 @@
-package math.data;
+package math.value;
 
 import math.Value;
 
-public class MathDouble implements Value {
+public class MathDouble extends Value {
 
     private final double value;
 

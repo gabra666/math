@@ -1,4 +1,4 @@
 package math;
 
-public interface Value {
+public class Value {    
 }

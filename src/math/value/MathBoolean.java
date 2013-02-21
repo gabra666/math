@@ -1,8 +1,8 @@
-package math.data;
+package math.value;
 
 import math.Value;
 
-public class MathBoolean implements Value {
+public class MathBoolean extends Value {
 
     private final boolean value;
 

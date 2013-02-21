@@ -1,8 +1,8 @@
-package math.data;
+package math.value;
 
 import math.Value;
 
-public class MathInt implements Value {
+public class MathInt extends Value {
 
     private final int value;
 
