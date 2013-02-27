@@ -1,7 +1,6 @@
 package math.operator.binary;
 
 import math.Node;
-import math.Value;
 import math.operator.BinaryOperator;
 
 public class Multiply extends BinaryOperator {
@@ -11,7 +10,7 @@ public class Multiply extends BinaryOperator {
     }
 
     @Override
-    public Value evaluate() {
+    public double evaluate() {
         return getLeftChild().evaluate() * getRigthChild().evaluate();
     }
 }
